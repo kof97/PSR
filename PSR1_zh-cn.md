@@ -91,7 +91,7 @@ class Vendor_Model_Foo
 }
 ```  
 
-## 4、类的常量 `constant`，属性 `property`，方法 `method`  
+## 4、类的常量 constant、属性 property、方法 method
 
 类 `class` 指所有的类 `class`，接口 `interface` 和特性 `trait`
 
@@ -110,12 +110,12 @@ class Foo
 }
 ```  
 
-### 4.2. 属性 `property`  
+### 4.2. 属性 property 
 
 这个指南中不再对 `StudlyCaps`，`$camelCase` 或是 `$unser_score` 中的某一个风格做特别推荐，由个人喜好而定
 
 但不管你如何定义，都 `建议` 在一定范围内保持风格的一致，这个范围 `可能` 是 `vendor`，`package`，`class`，或者 `method`
 
-### 4.3. 方法 `method`  
+### 4.3. 方法 method  
 
 方法名（`method`）`必须` 使用驼峰命名法，如 `camelCase`
