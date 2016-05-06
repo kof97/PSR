@@ -68,7 +68,8 @@ if (! function_exists('bar')) {
 
 类名（`class`）`必须` 使用大驼峰命名法，如 `StudlyCaps`
 
-`PHP5.3` 之后的 `必须` 使用正式的命名空间 `namespace`，例：
+`PHP5.3` 之后的 `必须` 使用正式的命名空间 `namespace`，例：  
+
 ``` php
 <?php
 // PHP 5.3 and later:
@@ -77,21 +78,24 @@ namespace Vendor\Model;
 class Foo
 {
 }
-```
-`PHP5.2.x` 和之前的版本 `建议` 用伪命名空间 `Vendor_` 作为类名的前缀
+```  
+
+`PHP5.2.x` 和之前的版本 `建议` 用伪命名空间 `Vendor_` 作为类名的前缀  
+
 ``` php
 <?php
 // PHP 5.2.x 及之前:
 class Vendor_Model_Foo
 {
 }
-```
+```  
 
 ## 4、类的常量 `constant`，属性 `property`，方法 `method`
 类 `class` 指所有的类 `class`，接口 `interface` 和特性 `trait`
 
 ### 4.1. 常量 `constant`
-类中的常量 `必须` 只能用 `大写字母` 和 `_` 来命名，例：
+类中的常量 `必须` 只能用 `大写字母` 和 `_` 来命名，例：  
+
 ``` php
 <?php
 namespace Vendor\Model;
@@ -101,7 +105,7 @@ class Foo
     const VERSION = '1.0';
     const DATE_APPROVED = '2012-06-01';
 }
-```
+```  
 
 ### 4.2. 属性 `property`
 这个指南中不再对 `StudlyCaps`，`$camelCase` 或是 `$unser_score` 中的某一个风格做特别推荐，由个人喜好而定
