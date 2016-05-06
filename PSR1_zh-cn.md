@@ -66,13 +66,13 @@ if (! function_exists('bar')) {
         // function body
     }
 }
-```  
 ```
 
-## 3、命名空间 `namespace` 和类名 `class name`
+## 3、命名空间 `namespace` 和类名 `class name`  
+
 命名空间 `Namespace` 和类 `class` `必须` 遵循"autoloading" PSR标准: [PSR-0, PSR-4].
 
-这意味着每个文件中只能有一个类 `class`，并且每个类 `class` 至少要有一级命名空间 `namespace`：即一个顶级的 `vendor name`
+这意味着每个文件中只能有一个类 `class`，并且每个类 `class` 至少要有一级命名空间 `namespace`：即一个顶级的 `vendor name`  
 
 类名（`class`）`必须` 使用大驼峰命名法，如 `StudlyCaps`
 
