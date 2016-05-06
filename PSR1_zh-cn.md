@@ -26,31 +26,30 @@ PHP 代码 `必须` 使用 `UTF-8 without BOM` 编码
 
 `side effects` 可以包含这些操作但并不局限于此：输出信息，显式地使用 `require` 或 `include`，连接外部服务，修改 `ini` 配置，触发错误或异常，修改全局或者静态变量，读取或写入文件等等
 
-下面是一个同时拥有声明和 `side effects` 的例子，应该避免：
+下面是一个同时拥有声明和 `side effects` 的例子，应该避免：  
 
 
 ``` php
 // side effect: change ini settings
 ini_set('error_reporting', E_ALL);
-
+  
 // side effect: loads a file
 include "file.php";
-
+  
 // side effect: generates output
 echo "<html>\n";
-
+  
 // declaration
 function foo()
 {
     // function body
 }
-``` 
-
+```
 
 这是一个只包含声明的例子，应该建议的方式：  
 
 
-``` php
+```
 // declaration
 function foo()
 {
@@ -65,7 +64,6 @@ if (! function_exists('bar')) {
     }
 }
 ```
-`
 
 ## 3、命名空间 `namespace` 和类名 `class name`  
 
@@ -77,10 +75,10 @@ if (! function_exists('bar')) {
 
 `PHP5.3` 之后的 `必须` 使用正式的命名空间 `namespace`，例：  
 
-``` php
+```
 // PHP 5.3 and later:
 namespace Vendor\Model;
-
+  
 class Foo
 {
 }
@@ -88,7 +86,7 @@ class Foo
 
 `PHP5.2.x` 和之前的版本 `建议` 用伪命名空间 `Vendor_` 作为类名的前缀
 
-``` php
+```
 // PHP 5.2.x 及之前:
 class Vendor_Model_Foo
 {
@@ -101,9 +99,9 @@ class Vendor_Model_Foo
 ### 4.1. 常量 `constant`
 类中的常量 `必须` 只能用 `大写字母` 和 `_` 来命名，例：
 
-``` php
+```
 namespace Vendor\Model;
-
+  
 class Foo
 {
     const VERSION = '1.0';
