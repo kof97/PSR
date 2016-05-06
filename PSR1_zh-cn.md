@@ -32,10 +32,13 @@ PHP 代码 `必须` 使用 `UTF-8 without BOM` 编码
 ``` php
 // side effect: change ini settings
 ini_set('error_reporting', E_ALL);
+  
 // side effect: loads a file
 include "file.php";
+  
 // side effect: generates output
 echo "<html>\n";
+  
 // declaration
 function foo()
 {
@@ -46,7 +49,7 @@ function foo()
 这是一个只包含声明的例子，应该建议的方式：  
 
 
-```
+```  
 // declaration
 function foo()
 {
@@ -59,7 +62,7 @@ if (! function_exists('bar')) {
     {
         // function body
     }
-}
+}  
 ```
 
 ## 3、命名空间 `namespace` 和类名 `class name`  
