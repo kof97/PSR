@@ -59,7 +59,7 @@ if (! function_exists('bar')) {
         // function body
     }
 }
-```
+```  
 
 ## 3、命名空间 `namespace` 和类名 `class name`
 命名空间 `Namespace` 和类 `class` `必须` 遵循"autoloading" PSR标准: [PSR-0, PSR-4].
