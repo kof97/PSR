@@ -2,6 +2,7 @@
 > https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 
 # 基本代码规范
+
 ## 1、概述
 > * `必须` 使用 `<?php ?>` 或是 `<?= ?>` 这两种标签
 > * PHP 代码中 `必须` 使用 `UTF-8 without BOM` 编码方式
@@ -26,6 +27,8 @@ PHP 代码 `必须` 使用 `UTF-8 without BOM` 编码
 `side effects` 可以包含这些操作但并不局限于此：输出信息，显式地使用 `require` 或 `include`，连接外部服务，修改 `ini` 配置，触发错误或异常，修改全局或者静态变量，读取或写入文件等等
 
 下面是一个同时拥有声明和 `side effects` 的例子，应该避免：
+
+
 ``` php
 <?php
 // side effect: change ini settings
@@ -43,7 +46,9 @@ function foo()
     // function body
 }
 ```
+
 这是一个只包含声明的例子，应该建议的方式：
+
 ``` php
 <?php
 // declaration
@@ -59,7 +64,8 @@ if (! function_exists('bar')) {
         // function body
     }
 }
-```
+```  
+
 
 ## 3、命名空间 `namespace` 和类名 `class name`
 命名空间 `Namespace` 和类 `class` `必须` 遵循"autoloading" PSR标准: [PSR-0, PSR-4].
