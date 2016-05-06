@@ -32,13 +32,10 @@ PHP 代码 `必须` 使用 `UTF-8 without BOM` 编码
 ``` php
 // side effect: change ini settings
 ini_set('error_reporting', E_ALL);
-  
 // side effect: loads a file
 include "file.php";
-  
 // side effect: generates output
 echo "<html>\n";
-  
 // declaration
 function foo()
 {
